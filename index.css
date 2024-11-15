@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Roboto&family=Satisfy&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    box-shadow: 3px 3px 10px lightslategray;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    flex: 1;
+    font-size: 40px;
+    padding: 20px;
+    margin-left: 50px;
+    font-family: Satisfy;
+}
+
+ul.menu{
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.menu li{
+    flex: 1;
+    list-style-type: none;
+    font-size: 16px;
+    font-family: "Barlow Condensed";
+    text-align: center;
+}
+
+.menu li {
+    text-decoration: none;
+    cursor: #000;
+    text-transform: uppercase;
+}
+
+.menu li:hover{
+    color: midnightblue;
+    text-decoration: underline;
+}
+
+/* Banner */
+.benner{
+    background-image: url('https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    text-align: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benner::before {
+    content: "";
+    position: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.benner-text-item{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.benner-heading{
+    flex: 1;
+}
+
+.benner-heading h1{
+    font-size: 100px;
+    font-weight: normal;
+    color: #11d6f5;
+    font-family: Satisfy;
+}
+
+.benner-text-item .form{
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+    width: 70%;
+    padding: 1% 2%;
+}
+
+.benner-text-item input,
+.benner-text-item .date,
+.benner-text-item .book{
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: Roboto;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+}
+
+.benner-text-item input{
+    width: 50%;
+    flex: 2;
+}
+
+.benner-text-item .date{
+    width: 20%;
+    flex: 1;
+}
+
+.benner-text-item .book{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #11d6f5;
+    font-size: 16px;
+    font-weight: normal;
+    font-weight: "Barlow condensed";
+    width: 20%;
+}
+
+/* Services */
+.services{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-items{
+    flex: 1;
+    padding: 50px 10px;
+    border:lightcyan solid 1px;
+    text-align: center;
+    margin: 180px 50px;
+    transition: all 15;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-items:hover{
+    box-shadow: 3px 3px 20px lightsteelblue;
+}
+
+.services-items h2{
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    width: 120px;
+    color: #001f38;
+    flex: 1;
+}
+
+.service-items img{
+    width: 60px;
+    height: 60px;
+    flex: 1;
+}
